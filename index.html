@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<style>
+    
+</style>
+<body>
+    <div class="p-20 max-w-lg mx-auto bg-blue-100 rounded-xl shadow-lg flex items-center mt-14">
+       <form action="" id="userform">
+        
+        <table class="mx-auto mt">
+            <tr><td colspan="2"><p class="text-center font-bold text-xl p-5">Registration Form</p></td></tr>
+            <tr>
+                <td class="text-lg p-2"><Label>Name</Label></td>
+                <td class="text-lg p-2"><input type="text" value="" required id="name" class="rounded-lg border focus:border-blue-500 focus:outline-none"></td>
+            </tr>
+            <tr>
+                <td class="text-lg p-2"><Label>Email</Label></td>
+                <td class="text-lg p-2"><input type="email" value="" required id="email" class="rounded-lg border focus:border-blue-500 focus:outline-none"></td>
+            </tr>
+            <tr>
+                <td class="text-lg p-2"><Label>Password</Label></td>
+                <td class="text-lg p-2"><input type="password" value="" required id="password" class="rounded-lg border focus:border-blue-500 focus:outline-none"></td>
+            </tr>
+            <tr>
+                <td class="text-lg p-2"><Label>Dob</Label></td>
+                <td class="text-lg p-2"><input type="date" value="" required max="2004-01-01" min="1967-01-01"   id="dob" class="rounded-lg border focus:border-blue-500 focus:outline-none"></td>
+            </tr>
+            <tr>
+                <td class="text-lg p-2"><Label>Accepted terms?</Label></td>
+                <td class="text-lg p-2"><input type="checkbox" value="" id="acceptTerms"></td>
+            </tr>
+            <tr><td class="text-lg p-2 text-center" colspan="2"><button type="submit" class="bg-green-500 p-2 rounded-xl">Submit</button></td></tr>
+        </table>
+
+       </form>
+    </div>
+    <div class="mx-auto bg-blue-100 rounded-xl shadow-lg flex items-center mt-14">
+        <div class="mx-auto">
+            <h2 class="text-center font-bold text-xl p-5">Entries</h2>
+            <div id="user-entries"></div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
